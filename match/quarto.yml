@@ -1,0 +1,23 @@
+matches:
+  - trigger: ":quarto-fm"
+    replace: |
+      ---
+      title: 
+      date: {{mydate}}
+      code-fold: true
+      echo: true
+      fig-cap-location: top
+      categories: []
+      number-sections: false
+      draft: false
+      cache: true
+      ---
+
+      
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+

@@ -1,0 +1,7 @@
+#---- latex stuff ----
+matches:
+  - trigger: ":var"
+    replace: "\\operatorname{Var}($|$)"
+
+  - trigger: ":E"
+    replace: "\\operatorname{E}($|$)"
