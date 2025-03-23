@@ -5,3 +5,15 @@ matches:
 
   - trigger: ":E"
     replace: "\\operatorname{E}($|$)"
+
+  - trigger: ":beta"
+    replace: "β"
+
+  - trigger: ":alpha"
+    replace: "α"
+
+  - trigger: ":eps"
+    replace: "ε"
+  
+  - trigger: ":Sigma"
+    replace: "Σ"
