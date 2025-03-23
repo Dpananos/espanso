@@ -1,0 +1,19 @@
+matches:
+  - trigger: ":stanmod"
+    replace: |
+      data {
+      $|$
+
+      }
+      parameters {
+
+      }
+      transformed parameters {
+      
+      }
+      model {
+      
+      }
+      generated quantities {
+      
+      }
