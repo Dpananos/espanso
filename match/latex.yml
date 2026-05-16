@@ -1,7 +1,0 @@
-#---- latex stuff ----
-matches:
-  - trigger: ":variance"
-    replace: "\\operatorname{Var}($|$)"
-
-  - trigger: ":expec"
-    replace: "\\operatorname{E}($|$)"

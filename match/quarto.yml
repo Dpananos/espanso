@@ -1,16 +1,16 @@
 matches:
-  - trigger: ":quarto-fm"
+  - trigger: ";quarto-fm"
     replace: |
       ---
       title: 
       date: {{mydate}}
-      code-fold: true
-      echo: true
+      code-fold: false
+      echo: false
       fig-cap-location: top
       categories: []
       number-sections: false
       draft: false
-      cache: true
+      cache: false
       ---
 
       

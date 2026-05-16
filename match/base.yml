@@ -8,16 +8,12 @@
 # Matches are substitution rules: when you type the "trigger" string
 # it gets replaced by the "replace" string.
 matches:
-  # Simple text replacement
-  - trigger: ":espanso"
-    replace: "Hi there!"
-
   # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
 
   # But matches can also be dynamic:
 
   # Print the current date
-  - trigger: ":dt"
+  - trigger: ";dt"
     replace: "{{mydate}}"
     vars:
       - name: mydate
@@ -26,3 +22,77 @@ matches:
           format: "%Y-%m-%d"
 
   # And much more! For more information, visit the docs: https://espanso.org/docs/
+
+  - trigger: ";ve"
+    replace: "source .venv/bin/activate"
+
+  - trigger: ";esp"
+    replace: "/Users/demetripananos/Library/Application\\ Support/espanso/"
+  
+  - trigger: ";r"
+    replace: "https://www.reddit.com/r/all/"
+
+  - trigger: ";var"
+    replace: "\\operatorname{Var}($|$)"
+
+  - trigger: ";cov"
+    replace: "\\operatorname{Cov}($|$)"
+
+  - trigger: ";cor"
+    replace: "\\operatorname{Corr}($|$)"
+
+  - trigger: ";proj"
+    replace: "\\operatorname{proj}_{$|$}()"
+  
+  - trigger: ";bm"
+    replace: "\\begin{bmatrix} $|$ \\end{bmatrix}"
+
+  - trigger: ";bf"
+    replace: "\\mathbf{$|$}"
+
+  - trigger: ";bb"
+    replace: "\\mathbb{$|$}"
+
+  - trigger: ";lfr("
+    replace: "\\left($|$\\right)"
+
+  - trigger: ";lfr["
+    replace: "\\left[ $|$ \\right]"
+
+  - trigger: ";lfr{"
+    replace: "\\left\\{ $|$ \\right\\}"
+
+  - trigger: ";lfr<"
+    replace: "\\left< $|$ \\right>"
+
+  - trigger: ";lfr|"
+    replace: "\\left\\lvert $|$ \\right\\rvert"
+    
+    
+
+  - trigger: ';zoom'
+    replace: |
+      Demetri Pananos is inviting you to a scheduled Zoom meeting.
+
+      Note: This meeting may use AI-generated features and/or be recorded at the host’s discretion. If you have any concerns or questions about the use of AI features in this meeting, please contact the meeting host or organizer.
+
+      Topic: Demetri Pananos's Personal Meeting Room
+      Join Zoom Meeting
+      https://westernuniversity.zoom.us/j/6705635021
+
+      Meeting ID: 670 563 5021
+
+      ---
+
+      One tap mobile
+      +16475580588,,6705635021# Canada
+
+      ---
+
+      Dial by your location
+      • +1 647 558 0588 Canada
+
+      Meeting ID: 670 563 5021
+
+      Find your local number: https://westernuniversity.zoom.us/u/ac0Oos0jN7
+  
